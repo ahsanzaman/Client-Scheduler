@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250" prefWidth="400" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label fx:id="usernameLabel" layoutX="50.0" layoutY="55.0" text="Username:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="passwordLabel" layoutX="50.0" layoutY="100.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="usernameFieldLogin" layoutX="150.0" layoutY="50.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordFieldLogin" layoutX="150.0" layoutY="95.0" onAction="#authenticateUser">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="loginBtn" layoutX="250.0" layoutY="150.0" mnemonicParsing="false" onAction="#authenticateUser" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="errorLabel" layoutX="150.0" layoutY="130.0" style="-fx-font-style: italic;" text="Error label" textFill="#ff0404" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="timezoneLabel" layoutX="50.0" layoutY="190.0" text="TimeZone Label">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

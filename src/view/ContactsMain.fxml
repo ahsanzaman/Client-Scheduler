@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="361.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactsController">
+   <children>
+      <Label layoutX="31.0" layoutY="22.0" text="Contacts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="contactsTable" layoutX="31.0" layoutY="66.0" prefHeight="200.0" prefWidth="433.0">
+        <columns>
+          <TableColumn fx:id="contactIDCol" prefWidth="87.0" text="Contact ID" />
+          <TableColumn fx:id="contactNameCol" prefWidth="167.0" text="Contact Name" />
+            <TableColumn fx:id="emailCol" minWidth="3.0" prefWidth="178.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button layoutX="31.0" layoutY="294.0" mnemonicParsing="false" text="Add">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="294.0" mnemonicParsing="false" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="188.0" layoutY="294.0" mnemonicParsing="false" text="Delete">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="21.0" mnemonicParsing="false" onAction="#logoutUser" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="290.0" layoutY="21.0" mnemonicParsing="false" onAction="#openMainMenu" text="Main Menu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

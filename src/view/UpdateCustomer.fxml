@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="333.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateCustomerController">
+   <children>
+      <Label layoutX="164.0" layoutY="14.0" text="Add Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="80.0" text="Customer Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="140.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="170.0" text="Postal Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="110.0" text="Phone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNameField" layoutX="205.0" layoutY="80.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="addressField" layoutX="205.0" layoutY="140.0" />
+      <TextField fx:id="postalCodeField" layoutX="205.0" layoutY="170.0" />
+      <TextField fx:id="phoneField" layoutX="205.0" layoutY="110.0" />
+      <Label layoutX="37.0" layoutY="230.0" text="State">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveBtn" layoutX="232.0" layoutY="270.0" mnemonicParsing="false" onAction="#updateCustomer" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="294.0" layoutY="270.0" mnemonicParsing="false" onAction="#openCustomersMain" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="stateComboBox" layoutX="205.0" layoutY="230.0" prefWidth="150.0" />
+      <Label layoutX="37.0" layoutY="50.0" text="Customer ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerIdField" disable="true" editable="false" layoutX="205.0" layoutY="50.0" />
+      <Label layoutX="37.0" layoutY="200.0" text="Country">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="countryComboBox" layoutX="205.0" layoutY="200.0" onAction="#updateDivisions" prefWidth="150.0" />
+   </children>
+</AnchorPane>
